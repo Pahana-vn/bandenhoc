@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        background: #fff;
+        box-shadow: 0px 1px 4px rgb(0 0 0 / 10%);
+        min-height: 300px;
+        margin: 1rem;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-container-1 .card:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .grid-container-1 .card:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .grid-container-1 .card:nth-child(3) {
+        grid-area: card3;
+    }
+
+
+    .grid-container-1 {
+        display: grid;
+        grid-template-areas:
+            "card1 card1 card3"
+            "card2 card2 card3"
+    }
+</style>
+
+<body>
+    <div class="grid-container-1">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+    </div>
+</body>
+
+</html>
